@@ -25,7 +25,7 @@ public class RunUnitTest {
 		Result unitTestResult = JUnitCore.runClasses(UnitTest.class);		
 		
 		//Write the result of Unit Tests, and print any failed cases
-        try {
+		try {
         	//Write time stamp
         	FileWriter writeLog = new FileWriter("Inputs And Outputs.txt", true);
         	Date currentDateTime = new Date();
@@ -42,10 +42,9 @@ public class RunUnitTest {
     		writeLog.write("All Test Cases Passed: " + unitTestResult.wasSuccessful() + "\r\n");
     		writeLog.write("\r\n\r\n");
         	writeLog.close();
-        }
-        catch (IOException e) {
+        	}
+		catch (IOException e) {
         	e.printStackTrace();
         }
 	}
-
 }
