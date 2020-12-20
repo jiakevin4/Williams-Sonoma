@@ -49,26 +49,25 @@ public class UnitTest {
 		assertEquals(Arrays.deepToString(expectedOutput4), Arrays.deepToString(sol.minimumRange(input4)));
 		
 		//Write inputs and outputs to log file
-        try {
-        	FileWriter writeLog = new FileWriter("Inputs And Outputs.txt", true);
-        	writeLog.write("Input1: " + Arrays.deepToString(input1) + "\r\n");
-        	writeLog.write("Actual Output1: " + Arrays.deepToString(sol.minimumRange(input1)) + "\r\n");
-        	writeLog.write("Expected Output1: " + Arrays.deepToString(expectedOutput1) + "\r\n");
-        	writeLog.write("Input2: " + Arrays.deepToString(input2) + "\r\n");
-        	writeLog.write("Actual Output2: " + Arrays.deepToString(sol.minimumRange(input2)) + "\r\n");
-        	writeLog.write("Expected Output2: " + Arrays.deepToString(expectedOutput2) + "\r\n");
-        	writeLog.write("Input3: " + Arrays.deepToString(input3) + "\r\n");
-        	writeLog.write("Actual Output3: " + Arrays.deepToString(sol.minimumRange(input3)) + "\r\n");
-        	writeLog.write("Expected Output3: " + Arrays.deepToString(expectedOutput3) + "\r\n");
-        	writeLog.write("Input4: " + Arrays.deepToString(input4) + "\r\n");
-        	writeLog.write("Actual Output4: " + Arrays.deepToString(sol.minimumRange(input4)) + "\r\n");
-        	writeLog.write("Expected Output4: " + Arrays.deepToString(expectedOutput4) + "\r\n");
-        	writeLog.write("\r\n");
-        	writeLog.close();
-        }
-        catch (IOException e) {
-        	e.printStackTrace();
-        }
+		try {
+			FileWriter writeLog = new FileWriter("Inputs And Outputs.txt", true);
+			writeLog.write("Input1: " + Arrays.deepToString(input1) + "\r\n");
+			writeLog.write("Actual Output1: " + Arrays.deepToString(sol.minimumRange(input1)) + "\r\n");
+			writeLog.write("Expected Output1: " + Arrays.deepToString(expectedOutput1) + "\r\n");
+			writeLog.write("Input2: " + Arrays.deepToString(input2) + "\r\n");
+			writeLog.write("Actual Output2: " + Arrays.deepToString(sol.minimumRange(input2)) + "\r\n");
+			writeLog.write("Expected Output2: " + Arrays.deepToString(expectedOutput2) + "\r\n");
+			writeLog.write("Input3: " + Arrays.deepToString(input3) + "\r\n");
+			writeLog.write("Actual Output3: " + Arrays.deepToString(sol.minimumRange(input3)) + "\r\n");
+			writeLog.write("Expected Output3: " + Arrays.deepToString(expectedOutput3) + "\r\n");
+			writeLog.write("Input4: " + Arrays.deepToString(input4) + "\r\n");
+			writeLog.write("Actual Output4: " + Arrays.deepToString(sol.minimumRange(input4)) + "\r\n");
+			writeLog.write("Expected Output4: " + Arrays.deepToString(expectedOutput4) + "\r\n");
+			writeLog.write("\r\n");
+			writeLog.close();
+			}
+		catch (IOException e) {
+			e.printStackTrace();
+			}
 	}
-
 }

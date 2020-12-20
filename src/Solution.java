@@ -77,29 +77,29 @@ public class Solution {
 		System.out.println("Produced minimum number of ranges of input 3: " + Arrays.deepToString(result3));
 		System.out.println("Produced minimum number of ranges of input 4: " + Arrays.deepToString(result4));
         
-        //Write inputs and outputs to log file with a time stamp
-        try {
-        	FileWriter writeLog = new FileWriter("Inputs And Outputs.txt", true);
-        	Date currentDateTime = new Date();
-        	writeLog.write("Produced the minimum number of ranges at: " + currentDateTime.toString() + "\r\n" + "\r\n");
-        	writeLog.write("Input1: " + Arrays.deepToString(input1) + "\r\n");
-        	writeLog.write("Output1: " + Arrays.deepToString(result1) + "\r\n");
-        	writeLog.write("Expected Output1: " + Arrays.deepToString(expectedOutput1) + "\r\n");
-        	writeLog.write("Input2: " + Arrays.deepToString(input2) + "\r\n");
-        	writeLog.write("Output2: " + Arrays.deepToString(result2) + "\r\n");
-        	writeLog.write("Expected Output2: " + Arrays.deepToString(expectedOutput2) + "\r\n");
-        	writeLog.write("Input3: " + Arrays.deepToString(input3) + "\r\n");
-        	writeLog.write("Output3: " + Arrays.deepToString(result3) + "\r\n");
-        	writeLog.write("Expected Output3: " + Arrays.deepToString(expectedOutput3) + "\r\n");
-        	writeLog.write("Input4: " + Arrays.deepToString(input4) + "\r\n");
-        	writeLog.write("Output4: " + Arrays.deepToString(result4) + "\r\n");
-        	writeLog.write("Expected Output4: " + Arrays.deepToString(expectedOutput4) + "\r\n");
-        	writeLog.write("\r\n" + "\r\n");
-        	writeLog.close();
-        }
-        catch (IOException e) {
-        	e.printStackTrace();
-        }
+		//Write inputs and outputs to log file with a time stamp
+		try {
+			FileWriter writeLog = new FileWriter("Inputs And Outputs.txt", true);
+			Date currentDateTime = new Date();
+			writeLog.write("Produced the minimum number of ranges at: " + currentDateTime.toString() + "\r\n" + "\r\n");
+			writeLog.write("Input1: " + Arrays.deepToString(input1) + "\r\n");
+			writeLog.write("Output1: " + Arrays.deepToString(result1) + "\r\n");
+			writeLog.write("Expected Output1: " + Arrays.deepToString(expectedOutput1) + "\r\n");
+			writeLog.write("Input2: " + Arrays.deepToString(input2) + "\r\n");
+			writeLog.write("Output2: " + Arrays.deepToString(result2) + "\r\n");
+			writeLog.write("Expected Output2: " + Arrays.deepToString(expectedOutput2) + "\r\n");
+			writeLog.write("Input3: " + Arrays.deepToString(input3) + "\r\n");
+			writeLog.write("Output3: " + Arrays.deepToString(result3) + "\r\n");
+			writeLog.write("Expected Output3: " + Arrays.deepToString(expectedOutput3) + "\r\n");
+			writeLog.write("Input4: " + Arrays.deepToString(input4) + "\r\n");
+			writeLog.write("Output4: " + Arrays.deepToString(result4) + "\r\n");
+			writeLog.write("Expected Output4: " + Arrays.deepToString(expectedOutput4) + "\r\n");
+			writeLog.write("\r\n" + "\r\n");
+			writeLog.close();
+			}
+		catch (IOException e) {
+			e.printStackTrace();
+			}
 	}
     
 	//Method for processing the input 5-digit ZIP code ranges and return the minimum number of ranges required to represent the same restrictions
