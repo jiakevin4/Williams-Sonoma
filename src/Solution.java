@@ -68,14 +68,14 @@ public class Solution {
 		//Call method minimumRange to return the minimum number of ranges, print them in Console,
 		//and write the results to log file
 		Solution sol = new Solution();
-        result1 = sol.minimumRange(input1);
-        result2 = sol.minimumRange(input2);
-        result3 = sol.minimumRange(input3);
-        result4 = sol.minimumRange(input4);
-        System.out.println("Produced minimum number of ranges of input 1: " + Arrays.deepToString(result1));
-        System.out.println("Produced minimum number of ranges of input 2: " + Arrays.deepToString(result2));
-        System.out.println("Produced minimum number of ranges of input 3: " + Arrays.deepToString(result3));
-        System.out.println("Produced minimum number of ranges of input 4: " + Arrays.deepToString(result4));
+		result1 = sol.minimumRange(input1);
+		result2 = sol.minimumRange(input2);
+		result3 = sol.minimumRange(input3);
+		result4 = sol.minimumRange(input4);
+		System.out.println("Produced minimum number of ranges of input 1: " + Arrays.deepToString(result1));
+		System.out.println("Produced minimum number of ranges of input 2: " + Arrays.deepToString(result2));
+		System.out.println("Produced minimum number of ranges of input 3: " + Arrays.deepToString(result3));
+		System.out.println("Produced minimum number of ranges of input 4: " + Arrays.deepToString(result4));
         
         //Write inputs and outputs to log file with a time stamp
         try {
