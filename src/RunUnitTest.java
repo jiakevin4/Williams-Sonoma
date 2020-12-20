@@ -37,14 +37,14 @@ public class RunUnitTest {
 				writeLog.write("Failed Test Case: " + fail.toString() + "\r\n");
 			}
     		
-        	//Write and print result of Unit Test
+			//Write and print result of Unit Test
 			System.out.println("All Test Cases Passed: " + unitTestResult.wasSuccessful());
 			writeLog.write("All Test Cases Passed: " + unitTestResult.wasSuccessful() + "\r\n");
 			writeLog.write("\r\n\r\n");
 			writeLog.close();
-        }
+			}
 		catch (IOException e) {
         	e.printStackTrace();
-        }
+        	}
 	}
 }
