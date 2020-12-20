@@ -18,6 +18,8 @@ Please read the following information before you run the codes.
 4. You can run the codes in two ways, log file will be generated or appended in either way:
 (1)(Recommended) Run RunUnitTest.java file in Eclipse. Unit Test Cases are run using this way.
    Information of the result of Unit Tests and information of any failed cases are also given in Console.
+   If all test cases are passed, "All Test Cases Passed: true" will be shown in the Console and log file.
+   Otherwise, information of failed test case will be shown with information of actual and expected produced minimum number of ranges.
 
 (2)Run Solution.java file in Eclipse. Unit Test Cases are not run using this way.
    Information of produced minimum number of ranges are also given in Console.
